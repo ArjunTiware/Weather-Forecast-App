@@ -24,6 +24,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
                     <h6>Temp: ${(weatherItem.main.temp - 273.15).toFixed(2)}°C</h6>
                     <h6>Wind: ${weatherItem.wind.speed} M/S</h6>
                     <h6>Humidity: ${weatherItem.main.humidity}%</h6>
+                    <h6 class="capitalize -mt-2.5">${weatherItem.weather[0].description}</h6>
                 </li>`;
     }
 }
