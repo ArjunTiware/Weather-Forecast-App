@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -11,6 +10,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+body {
+  background-color: #5ac2eb;
 }
 
 h1 {
@@ -19,22 +23,23 @@ h1 {
 }
 
 .container {
-  gap: 35px; 
+  gap: 35px;
   padding: 30px;
 }
 
 .weather-input {
   width: 550px;
-} 
+}
 
 .weather-input input {
   height: 40px;
   width: 100%;
   outline: none;
   font-size: 1.07rem;
+  background: #ffffff1a;
   padding: 0 17px;
   margin: 0 0 20px 0;
-  border: 2px solid #858585;
+  border: 2px solid #3e3e3e;
   border-radius: 5px;
 }
 
@@ -47,7 +52,9 @@ h1 {
   font-size: 1.2rem;
   padding: 5px;
   color: #fff;
-  background: #34c3fb;
+  background: #ffffff1a;
+  box-shadow: inset 0 0 5px #ffffff33;
+  backdrop-filter: blur(8px);
   transition: 0.5s;
 }
 
@@ -55,18 +62,11 @@ h1 {
 .weather-input .search-btn:hover {
   background: #00b1f8;
 }
-/* 
-.weather-data {
-  width: 100%;
-} */
-
 .weather-data .current-weather {
-  /* color: #fff; */
-  background: #5372f0;
-  /* border-radius: 5px;
-  padding: 20px 70px 20px 20px;
-  display: flex;
-  justify-content: space-between; */
+  background: #ffffff1a;
+  box-shadow: inset 0 0 5px #ffffff33;
+  backdrop-filter: blur(8px);
+  border-radius: 5px;
 }
 
 .current-weather h2 {
@@ -80,48 +80,26 @@ h1 {
   font-weight: 500;
 }
 
-/* .current-weather .icon {
-  text-align: center;
-} */
-
-/* .current-weather .icon img {
+.current-weather .icon i {
   max-width: 120px;
   margin-top: -15px;
-} */
-
-/* .current-weather .icon h6 {
-  margin-top: -10px;
-  text-transform: capitalize;
-} */
-
-/* .days-forecast h2 {
-  margin: 20px 0;
-  font-size: 1.5rem;
-} */
-
-/* .days-forecast .weather-cards {
-  display: flex;
-  gap: 20px;
-} */
+}
 
 .weather-cards .card {
   color: #fff;
   padding: 18px 16px;
   list-style: none;
   width: calc(100% / 5);
-  background: #6c757d;
   border-radius: 5px;
+  box-shadow: inset 0 0 5px #ffffff33;
+  background: #ffffff1a;
+  backdrop-filter: blur(8px);
 }
 
 .weather-cards .card h3 {
   font-size: 1.3rem;
   font-weight: 600;
 }
-
-/* .weather-cards .card img {
-  max-width: 70px;
-  margin: 5px 0 -12px 0;
-} */
 
 @media (max-width: 1400px) {
   .weather-data .current-weather {
