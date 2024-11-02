@@ -594,6 +594,12 @@ h1 {
   border-radius: 5px;
 }
 
+.weather-input ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
 .weather-input button {
   width: 100%;
   cursor: pointer;
