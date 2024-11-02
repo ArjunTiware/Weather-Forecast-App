@@ -21,56 +21,67 @@
 
 <body>
     <h1 class="text-center" aria-labelledby="Heading">Weather Forecast App</h1>
+
     <div class="container flex" aria-labelledby="Container">
+
         <div class="weather-input w-[550px]">
             <label for="City Name" class="font-bold text-xl">Enter City Name</label>
             <input class="city-input" type="text" aria-label="Enter search term" required aria-required="true" placeholder="Enter city...">
-            <button class="search-btn" aria-labelledby="Search Button">Search <i
-                    class="fa-duotone fa-solid fa-magnifying-glass fa-beat text-2xl ml-1"></i></button>
-            <br><br>
-            <button class="location-btn" aria-labelledby="">Use Current Location <i
+            <button class="search-btn" type="submit" aria-labelledby="Search Button">Search <i
+                class="fa-duotone fa-solid fa-magnifying-glass fa-beat text-2xl ml-1"></i></button>
+                <br><br>
+                <button class="location-btn" aria-labelledby="">Use Current Location <i
                     class="fa-sharp fa-solid fa-location-crosshairs fa-beat text-2xl ml-1"></i></button>
+                    <ul class="recent-cities-dropdown" style="display: none;"></ul>
         </div>
+
+
         <div class="weather-data w-full" aria-labelledby="Weather data">
             <div class="current-weather text-white flex justify-between" aria-labelledby="Current Weather">
                 <div class="details">
                     <h2 class="font-bold text-[1.7rem]"></h2>
-                    <h6>Temperature: °C</h6>
-                    <h6>Wind: M/S</h6>
+                    <h6>Temperature: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                    <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                     <h6>Humidity: %</h6>
                 </div>
             </div>
+
+
             <div class="days-forecast" aria-labelledby="5 Days Weather Forecast">
                 <h2 class="text-2xl mx-0 my-5">5-Day Forecast</h2>
                 <ul class="weather-cards flex gap-5">
                     <li class="card">
                         <h3></h3>
-                        <h6>Temp: C</h6>
-                        <h6>Wind: M/S</h6>
+                        <h6>Temp: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                        <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                         <h6>Humidity: %</h6>
                     </li>
+
                     <li class="card">
                         <h3></h3>
-                        <h6>Temp: C</h6>
-                        <h6>Wind: M/S</h6>
+                        <h6>Temp: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                        <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                         <h6>Humidity: %</h6>
                     </li>
+
                     <li class="card">
                         <h3></h3>
-                        <h6>Temp: C</h6>
-                        <h6>Wind: M/S</h6>
+                        <h6>Temp: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                        <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                         <h6>Humidity: %</h6>
                     </li>
+
                     <li class="card">
                         <h3></h3>
-                        <h6>Temp: C</h6>
-                        <h6>Wind: M/S</h6>
+                        <h6>Temp: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                        <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                         <h6>Humidity: %</h6>
                     </li>
+                    
                     <li class="card">
                         <h3></h3>
-                        <h6>Temp: C</h6>
-                        <h6>Wind: M/S</h6>
+                        <h6>Temp: °C <i class="fa-solid fa-temperature-half"></i></h6>
+                        <h6>Wind: M/S <i class="fa-sharp fa-solid fa-wind"></i></h6>
                         <h6>Humidity: %</h6>
                     </li>
                 </ul>
